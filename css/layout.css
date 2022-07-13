@@ -1,23 +1,16 @@
 body {
   background-color: rgb(49, 49, 49);
   margin: 0;
-}
-
-#container {
-  width: 90%;
   position: absolute;
   bottom: 0;
   top: 0;
   display: grid;
   grid-template-columns: 20% 60% 20%;  
-  grid-template-rows: auto;
-  padding: 0 5% 0 5%;
-
 }
 
-a, i{
-  text-decoration: none;
-  color: orange;  
+#container {
+  width: 100%;
+  padding: 0 25px 0 25px;
 }
 
 #content {
@@ -37,12 +30,36 @@ ul {
   font-family: monospace;
 }
 
+#sidebar {
+  padding-left: 25px;
+}
+
 #sidebar-logos {
   bottom: 20px;
   position: fixed;
 }
-#sidebar-logos a {
-  padding-right: 20px;
+
+a {
+  text-decoration: none;
+  color: orange; 
+}
+
+.aboutmecontent {
+  display: flex;
+}
+
+#pic {
+  max-width: 200px;
+  max-height: 250px;
+  object-fit: cover;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+#sidebar-logos a , #sidebar-logos i {
+  padding-right: 10px;
+  text-decoration: none;
+  color: white; 
 }
 
 #backgroundvideo {
@@ -60,7 +77,7 @@ ul {
   position: relative;
   padding-left: 30px;
   padding-right: 30px;
-  min-height: 50rem;
+  min-height: 30rem;
 }
 
 #aboutme {
