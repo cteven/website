@@ -5,22 +5,22 @@ body {
   bottom: 0;
   top: 0;
   display: grid;
-  grid-template-columns: 20% 60% 20%;  
+  grid-template-columns: 25% 50% 25%;  
+  width: 100%;
 }
 
 #container {
   width: 100%;
-  padding: 0 25px 0 25px;
 }
 
 #content {
-  padding: 25px;
-  color: white;
-  background-color: rgb(22, 22, 22);
+  padding: 60px;
+  color: black;
+  background-color: rgb(230, 255, 250);
   font-family: "Lato";
 }
 
-ul {
+#sidebar ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -39,16 +39,49 @@ ul {
   position: fixed;
 }
 
-a {
+.scrolldowncontainer {
+  position: relative;
+  top: 10rem;
+  font-size: 15px;
+  min-height: 30rem;
+  padding-left: 40px;
+  color: rgb(100, 100, 100);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.arrow {
+  font-size: 75px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.description a {
   text-decoration: none;
-  color: orange; 
+  color: black; 
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: orange;
 }
 
 .aboutmecontent {
   display: flex;
 }
 
-#pic {
+.pic {
   max-width: 200px;
   max-height: 250px;
   object-fit: cover;
@@ -59,7 +92,7 @@ a {
 #sidebar-logos a , #sidebar-logos i {
   padding-right: 10px;
   text-decoration: none;
-  color: white; 
+  color: orange; 
 }
 
 #backgroundvideo {
@@ -72,19 +105,36 @@ a {
   filter: blur(10px);
 }
 
-#home {
-  top: 150px;
-  position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
-  min-height: 30rem;
+.msg-container {
+  display: grid;
+  justify-content: center;
 }
 
-#aboutme {
-  top: 15%;
+.message {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: fit-content;
+}
+
+.message div{
+  text-align: center;
+  font-size:50px;
+  width: fit-content;
+  padding-top: 20px;
+}
+.message pre {
+  width: fit-content;
+}
+
+
+#home {
+  top: 10rem;
   position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
+  min-height: 20rem;
+}
+
+#section {
+  position: relative;
   min-height: 50rem;
 }
 
@@ -96,24 +146,23 @@ a {
 .subtitle {
   font-size: 24px;
   margin: 15px 15px 15px 0;
-  color: rgb(215, 215, 215);
+  color: rgb(58, 58, 58);
 }
 
 .description {
   font-size: 16px;
-  color: rgb(158, 146, 133);
-
+  color: rgb(90, 84, 78);
 }
  
 .menutitle {
   font-family: monospace;
-  color: orange;
+  color: rgb(56, 56, 56);
   font-size: 32px;
   margin: 30px 30px 30px 0;
 }
 
 .specialtext {
-  color: orange;
+  color: rgb(0, 0, 0);
 }
 
 #playbutton {
@@ -127,14 +176,38 @@ a {
   border-color: transparent transparent transparent orange;
   transition: 150ms all ease;
   cursor: pointer;
-  height: 18px;
+  height: 30px;
+  animation: bounce 2s;
 }
 
 .play {
-  border-width: 10px 0 10px 18px;
+  border-width: 15px 0 15px 30px;
   border-style: solid;
 }
 .pause {
   border-style: double;
-  border-width: 0px 0 0px 18px;
+  border-width: 0px 0 0px 30px;
+}
+
+.techstack {
+  margin-top: 0;
+  display: grid;
+  padding-left: 10px;
+  grid-template-columns: auto auto ;
+  grid-template-rows: auto auto auto;
+  max-width: 300px;
+  list-style-type: none;
+}
+
+.techstack li {
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 20px;
+  color: rgb(90, 84, 78);
+}
+
+.techstack li::before {
+  content: "⁃ ";
+  font-size: 20px;
+  color: rgb(34, 168, 0);;
 }

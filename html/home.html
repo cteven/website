@@ -13,7 +13,7 @@
     <div id="sidebar">
       <ul>
         <li><a href="home.html">/home</a></li>
-        <li><a href="home.html">/about me</a></li>
+        <li><a href="home.html">/about_me</a></li>
         <li><a href="home.html">/education</a></li>
         <li><a href="home.html">/projects</a></li>
       </ul>
@@ -25,35 +25,65 @@
     </div>
     <div id="container">
       <div id="content">
+        <div class="msg-container">
+          <div class="message">
+              <pre>
+ _   _
+| | | | ___ _   _
+| |_| |/ _ \ | | |
+|  _  |  __/ |_| |
+|_| |_|\___|\__, |
+            |___/
+              </pre>
+              <div>&#128034;</div>
+          </div>
+        </div>
         <div id="home" class="contentcontainer">
-          <div class="menutitle">/home</div>
-          <div class="subtitle">Hey, I am Steven</div>
-          <div class="description">a <a href="https://www.bht-berlin.de/en/b-ti">Technical Engineering</a> student studying in Berlin</div>
-          <div class="description">I like everything from frontend to backend to machine learning to IT-security</div>
+          <div class="menutitle">./home</div>
+          <div class="subtitle">I am Steven</div>
+          <div class="description">
+            <p>
+              a <a href="https://www.bht-berlin.de/en/b-ti"><u>Technical Engineering</u></a> student studying in Berlin.
+              <br>
+              I like everything from frontend to backend to machine learning to IT-security.
+            </p>
+          </div>
           <!-- <div class="description" style="padding-top:10px;">so whatever there is, i will find interest</div> -->
         </div>
-        
-        <div id="aboutme">
-          <div class="menutitle">/about</div>
+        <div class="scrolldowncontainer">
+          Scroll down to explore more!
+          <div class="arrow">&#8681;</div> 
+        </div>
+        <div id="section">
+          <div class="menutitle">./about_me</div>
           <div class="aboutmecontent">
             <div class="description"> 
               <p> 
-                I am currently studying Technical Engineering at BHT Berlin.
-                I am also an intern at Fraunhofer FOKUS, working on frontend-development with JS, CSS and HTML.
-                My next goal after graduating will be pursuing my Masters degree.
+                I am currently studying Technical Engineering(TE) at BHT Berlin
+                and also an intern at Fraunhofer FOKUS, working on frontend-development with JS, CSS and HTML.
+                <br>
+                My next goal after graduating will be a masters degree.
               </p>
+              <br><br>
+              Some tech I use:
+              <ul class="techstack">
+                <li style="grid-column: 1 / span 2;">we use a lot of Linux in university</li>
+                <li>C/C++</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>Shell/Bash</li>
+              </ul>
             </div>
-            <div class="experiences">
-              
-            </div>
-            <img id="pic" src="../resources/img/me.jpg">
+            <img class="pic" src="../resources/img/me.jpg">
           </div>
-          
+        </div>
+        <div class="section">
+          <div class="menutitle">./education</div>
         </div>
       </div>
     </div>
     <button id="playbutton" class="pause"></button>
     
-    <video id="backgroundvideo" src="../resources/videos/FTDlMUw.mp4" muted autoplay loop ></video>
+    <video id="backgroundvideo" src="../resources/videos/FTDlMUw.mp4" muted autoplay loop></video>
   </body>
 </html>
